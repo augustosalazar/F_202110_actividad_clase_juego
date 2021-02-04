@@ -49,6 +49,8 @@ class _FirstStatefulWidgetState extends State<FirstStatefulWidget> {
     setRandomWord();
   }
 
+  void _onReset() {}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,6 +70,7 @@ class _FirstStatefulWidgetState extends State<FirstStatefulWidget> {
                   onPressed: () => _onPressed(1), child: Text("Adjective"))
             ],
           ),
+          ElevatedButton(onPressed: () => _onReset(), child: Text("Reset")),
         ],
       ),
     );
